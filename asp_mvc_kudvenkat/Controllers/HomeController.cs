@@ -8,9 +8,10 @@ namespace asp_mvc_kudvenkat.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public string Index( string id, string name )
         {
-            return View();
+            return "from action method Index() id = " + id + " querystring[name]=" +
+                name;
         }
 
         public ActionResult About()
