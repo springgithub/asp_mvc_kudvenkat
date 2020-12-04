@@ -8,10 +8,17 @@ namespace asp_mvc_kudvenkat.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index( string id, string name )
+        public ActionResult  Index()
         {
-            return "from action method Index() id = " + id + " querystring[name]=" +
-                name;
+            ViewBag.JayCountry = new List<string>()
+            {
+                "india",
+                "us", 
+                "uk",
+                "canada"
+            };
+
+            return View();
         }
 
         public ActionResult About()
