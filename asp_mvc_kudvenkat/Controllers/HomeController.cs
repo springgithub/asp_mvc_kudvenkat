@@ -18,6 +18,13 @@ namespace asp_mvc_kudvenkat.Controllers
                 "canada"
             };
 
+            ViewData["1stworld"] = new List<string>()
+            {
+                "US",
+                "Uk",
+                "Uganda"
+            };
+
             return View();
         }
 

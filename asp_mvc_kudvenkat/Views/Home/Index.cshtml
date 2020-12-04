@@ -1,17 +1,24 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Country list";
 }
-
-<h2>Country list</h2>
+<h1>Country list</h1>
 <ul>
-
-
     @foreach( string strCountry in ViewBag.JayCountry)
     {
         <li>
             @strCountry
-
+        </li>
+    }
+</ul>
+<br />
+<h1>
+    1stworld
+</h1>
+<ul>
+    @foreach( string str in (List<string>)ViewData["1stworld"])
+    {
+        <li>
+            @str
         </li>
     }
 </ul>
